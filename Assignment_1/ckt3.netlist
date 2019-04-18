@@ -1,0 +1,48 @@
+There could be junk here!
+Since this portion does not belong to circuit definition.
+.circuit #
+V1 GND 1 10   
+R1 1 2 1e3
+R2 2 3 1e3
+R3 3 4 1e3
+R4 4 5 1e3      
+R5 2 GND 2e3
+R6 3 GND 2e3
+R7 4 GND 2e3
+R8 5 GND 2e3
+.end 
+There could be junk here!
+Since this portion does not belong to circuit definition.
+'''for line in lines:
+        if len(line.split()) == 4:    
+            ope = one_port_element(line)
+            if ope.from_node == 'GND' :
+                diction['GND'] = 0
+            else :
+               # key = int(''.join(filter(str.isdigit,ope.from_node)))
+                key = 
+                diction[ope.from_node] = key
+            if ope.to_node != 'GND':
+                key = int(''.join(filter(str.isdigit,ope.to_node)))
+                diction[ope.to_node] = key
+            else :
+                diction['GND'] = 0
+    return diction'''
+\begin{rSection}{Positions of Responsibility}
+	\item \textbf{Coordinator, Computer Vision and Intelligence Group}: \hfill{\em May 2018 - Present} \begin{itemize}
+\item Undertake projects in \textbf{pattern recognition}, autonomous mapping and navigation,reinforcement agents, etc.
+\item Conduct sessions and workshops for a 200+ audience in machine learning and artificial intelligence. 
+\end{itemize}
+	\item \textbf{Evolve Organiser, Shaastra 2019}:  \hfill{\em May 2018 - Jan 2019} \begin{itemize}
+			\item Organised a Sports Technology Summit and conducted the \textbf{Sports Analytics Hackathon}.
+			\item 200+ developers brainstormed on problem statements employing deep learning. \end{itemize}\end{rSection} \end{itemize}
+
+
+'''
+V1 GND 1 ac 10 0
+R1 1 2 2
+R3 2 3 5
+R2 2 GND 3
+RL 3 GND 1
+C1 3 GND 1e-6
+'''
