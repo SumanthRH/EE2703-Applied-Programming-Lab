@@ -1,0 +1,72 @@
+%
+% LaTeX report template 
+%
+
+% This is a comment: in LaTeX everything that in a line comes
+% after a "%" symbol is treated as comment
+
+\documentclass[11pt, a4paper]{article}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{listings}
+
+
+\title{Assignment No 1} % Title
+
+\author{Name of the students} % Author name
+
+\date{\today} % Date for the report
+\begin{document}		
+		
+\maketitle % Insert the title, author and date
+\section{Section Title}
+%Create new section;it is autonumbered
+
+ Input the contents of section \\
+ In the first three semesters, you learned about C programming, some VERILOG and some assembly language programming. In this lab, you are going to learn to code in Python. Python is one of the most popular programming languages of today. It’s simplicity in syntax, availability of a large number of open source libraries and the amazing open source community support makes it the favorite for scientists. \\
+To insert image 
+   \begin{figure}[!tbh]
+   	\centering
+   	\includegraphics[scale=0.5]{images.jpeg}  % Mention the image name within the curly braces. Image should be in the same folder as the tex file. 
+   	\caption{Sample image}
+   	\label{fig:sample}
+   \end{figure} 
+\subsection*{Subsection Title}
+% When adding * to \section, \subsection, etc... LaTeX will not assign
+% a number to the section
+	
+  \textbf{Use textbf to get text in boldface.}
+  \textit{Use textit to get text in italics} \\
+  To insert inline command u can use \texttt{print("Hello World")} \\
+  To insert unordered list
+  \begin{itemize}
+  	\item One
+  	\item Two
+  \end{itemize} 
+ \subsection{Equations}
+ To insert equation with auto numbering
+  \begin{equation}\label{eq:1}
+  V_{n1}-V_{n2}=I_{n1,n2} R_{n1,n2}
+  \end{equation}
+  To insert equation without numbering.
+\begin{equation*}
+ V_{n1}-V_{n2}=L_{n1,n2} \frac{dI_{n1,n2}}{dt}
+\end{equation*}
+\section{Dealing with codes}
+To type block of code manually use the following block
+\begin{verbatim}	
+\* Insert your code here */ 
+\end{verbatim}
+To import code from file : 
+\lstinputlisting[language=Python]{sample.py}
+\section{Labeling}
+You can label any equation or image or section . Use \texttt{label\{labelname\}}  you give the object you want to refer.\\
+To refer the labeled object use \texttt{ref\{labelname\}} \\
+Figure~\ref{fig:sample} is the sample image \\
+Equation ~\ref{eq:1} is the sample equation 
+
+\end{document}
+
+
+
+ 
