@@ -1,4 +1,8 @@
+''' Submission for assignment 1 '''
+
 import sys
+
+
 try :
     if( len(sys.argv) != 2):
         sys.exit('Invalid number of arguments')
@@ -35,18 +39,4 @@ try :
 except Exception:
     print('Invalid file')
 
-
-'''if(not(binary & 1)) :
-            countz += 1
-            maxz = max(maxz,countz)
-            maxo = max(maxo,counto) 
-            counto = 0
-            binary >>= 1
-
-        else:
-            counto +=1
-            maxo =  max(maxo,counto)
-            maxz = max(maxz,countz) 
-            countz = 0
-            binary >>= 1'''
   
